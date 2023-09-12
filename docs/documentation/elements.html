@@ -5,7 +5,7 @@ permalink: /elements/
 weight: 4
 ---
 
-<h1>Elements</h1>
+<h1>Projects</h1>
 
 {% assign list_items = "" %}
 {% for element in site.elements %}
@@ -15,7 +15,7 @@ weight: 4
         {{ title }}
     {%- endcapture -%}
 {% endfor %}
-{% include elements/list.html title="Table of Contents" type="toc" %}
+{% include elements/list.html title="Projects" type="toc" %}
 
 {% for element in site.elements %}
     {{ element }}

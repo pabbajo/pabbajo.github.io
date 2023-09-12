@@ -1,7 +1,7 @@
 ---
-name: PlaceHolder Project
+name: RoadScanner
 tools: [nothing, important]
-image: https://www.sketchappsources.com/resources/source-image/project-neon-groove-music-ui.png
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-external_url: https://www.google.com
+image: /assets/roadscanner.png
+description: 교통 표지판 인식 AI 웹 서비스
+external_url: http://52.79.209.187:8080/main
 ---
