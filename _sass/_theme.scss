@@ -1,10 +1,18 @@
 @mixin themed($property, $light-value, $dark-value) {
   [data-theme="light"] & {
     #{$property}: $light-value;
+    color: rgba(52, 58, 64, 0.5);
+    position: fixed;
+    top: 12px;
+    right: 1em;
   }
 
   [data-theme="dark"] & {
     #{$property}: $dark-value;
+    color: rgba(52, 58, 64, 0.5);
+    position: fixed;
+    top: 12px;
+    right: 1em;
   }
 }
 

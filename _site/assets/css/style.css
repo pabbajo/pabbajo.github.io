@@ -823,30 +823,62 @@ body {
 [data-theme=light] .navbar-themed .navbar-brand,
 [data-theme=light] .navbar-themed .navbar-nav .nav-link.active {
   color: #343a40;
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 [data-theme=dark] .navbar-themed .navbar-brand,
 [data-theme=dark] .navbar-themed .navbar-nav .nav-link.active {
   color: rgba(255, 255, 255, 0.9);
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 [data-theme=light] .navbar-themed .navbar-nav .nav-link {
   color: rgba(52, 58, 64, 0.5);
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 [data-theme=dark] .navbar-themed .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 
 [data-theme=light] .text-themed {
   color: #343a40;
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 [data-theme=dark] .text-themed {
   color: rgba(255, 255, 255, 0.9);
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 
 [data-theme=light] .bg-themed {
   background-color: #f8f9fa;
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 [data-theme=dark] .bg-themed {
   background-color: #343a40;
+  color: rgba(52, 58, 64, 0.5);
+  position: fixed;
+  top: 12px;
+  right: 1em;
 }
 
 [data-theme=dark] {

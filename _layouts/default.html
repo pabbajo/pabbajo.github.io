@@ -11,14 +11,30 @@
 {% include head.html %}
 
 <body class="h-100 d-flex flex-column">
+  <span id="theme-toggler" role="button" onclick="toggleTheme()"></span>
 
   <main class="flex-shrink-0 container mt-5">
     {% include navbar.html %}
-    {{ content }}
+    <div class="row justify-content-center align-items-center p-4">
+	  <div class="col-lg-4 col-md-6 text-center mt-4">
+
+		<!-- Fine Circle Responsive Image -->
+		<div id="container" class="my-2">
+		  <div id="dummy"></div>
+		  <div id="element">
+			<img src="/assets/profile.jpeg" alt="Your awesome title" class="circle-image wow animated zoomIn" data-wow-delay=".1s" />
+		  </div>
+		</div>
+		
+		<h2 class="text-muted wow animated slideInUp"><strong>Contact</strong></h2>
+		
+		<p class="text-muted wow animated slideInUp" data-wow-delay=".15s"> <br><strong>Phone.</strong> 010-3908-9070<br><strong>Email.</strong> chagusrud@naver.com</p>
+
+	  </div>
+	</div>
   </main>
   {% include footer.html %}
 
-  {% include analytics.html %}
   {% include scripts.html %}
 
   {%- if site.buymeacoffee.enabled == true -%}
