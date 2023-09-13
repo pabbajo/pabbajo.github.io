@@ -62,13 +62,13 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
 	
-	  <a class="nav-item nav-link " href="/skill/">Skill</a>
+	  <a class="nav-item nav-link " href="/about/">Skill</a>
 
       <a class="nav-item nav-link " href="/elements/">Projects</a>
 	  
 	  <a class="nav-item nav-link " href="https://github.com/pabbajo"><i class="fab fa-1x fa-github"></i></a>
 	  
-	  <a class="nav-item nav-link " href="https://ash-harbor-041.notion.site/f08681c6e762426795f53100feac5e92?pvs=4">
+	  <a class="nav-item nav-link " href="https://ten-fossa-1be.notion.site/556cc9dda3e24daca149e658df6977c5?pvs=4">
 		<img style="margin-bottom: 4px; opacity: 0.7;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAACC0lEQVR4nLWUz6sSURTHX0HRok3RLqigRdAmyFUhXM6548yIP8bNYIigi9CFf4BuRBFczaZAn0tXuhbEtRoKrweJqdD48klIEmjwmJIWynjjTj0oUl+96guHyz33fD+cy+Xcvb3/rAuEkBsAcA8AHlNK3ZTSEABEEPHhVlcqlbqIiBVE7DscjjdOp/Otz+frBgKBg2g0+iKRSDQ0TWvk8/mm3+8/RMTnhJArv4AEQbiFiCwejzdM01yzM1QoFJoA0AOABz+BCCF3OIiHoiiveQexWKwZCoXaqqoeer3eHu+SUjpFxE/fa7/wEEXx+kYQACwymUx9f3+/WS6XW7Va7WW73e4OBgN9MplMDMM4Mb9pLQjCB+7dCJJl+Yi3b5omm8/nbDwes9VqZV1J13VWrVZZq9Wy9qIovjsTxItdLpeVKxaLlnE4HFr7xWLx+yCuYDDIBEHgBjYajdh6vbZq+PrHoFwuZ+UjkQhbLpfnB/X7fZZMJq2zUqn0d6DZbMbcbjeTJGk3yG63XwMAcxuIq1KpWJCdIC4AePYjqNPpsHA4zLLZrPX83KxpGkun07tBqqpeRsQDSZKO2RYZhnEynU7f67p+VK/XX1FKPwPA7W0zN1MUpevxeHqyLJ+OhXF6LURcAcBHADjmg26z2S5t/AkA4C4iPkXEJ4jopJQ+QsT7iHiTEHJ1o+lf6iu3Ex6dTXMscQAAAABJRU5ErkJggg==">
 	  </a>
 	  
@@ -77,19 +77,56 @@
 
 </nav>
     <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  <h1>Projects</h1>
+  <h1><strong>Projects</strong></h1>
 
-
-
-<div class="list-group my-3"><a class="list-group-item active disabled text-white" style="background-color: #915549; border-color: #915549;">Projects</a><a class="list-group-item list-group-item-action" href="#headers">Headers</a>
-  <a class="list-group-item list-group-item-action" href="#headers">Headers</a>
-  
+<div class="list-group my-3"><a class="list-group-item active disabled text-white" style="background-color: #915549; border-color: #915549;">Projects</a><a class="list-group-item list-group-item-action" href="#RoadScanner">RoadScanner</a>
+  <a class="list-group-item list-group-item-action" href="#SportsXPress">SportsXPress</a>
 
 </div>
 
 
 
+<div class="row justify-content-between">
+<h2 id="RoadScanner" class="col-10"> RoadScanner</h2>
+<div class="col-2"><p class="text-muted" style="margin-top: 2rem;">2023.07 ~ 2023.08 (9주)</p></div>
+</div>
+<h4 class="text-muted"><a href="http://52.79.209.187:8080/main" style="color: #915549;">교통 표지판 인식 AI 웹 서비스</a></h4>
+<image src="/assets/roadscanner.png" style="width: 80%;"/>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[개발 환경]</mark>
+<image src="/assets/env01.png" style="width: 65%;"/>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[참여 범위]</mark>
+<h6 class="mt-3" style="line-height: 2;">- DB설계, 구현 및 데이터 수집. VO, Dao(Impl), Service(Impl), Controller, xml 쿼리문 작성<br>
+JSP를 사용한 메인 표지판 업로드, 게시판 파일 첨부 글쓰기 구현. AWS S3, RDS, EC2 연결, 보안 설정 및 배포</h6>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[성   과]</mark>
+<ul class="mt-3">
+  <li>MultipartFile 인터페이스와 AWS S3 사용하여 첨부파일 업로드, 객체 관리</li>
+  <li>AWS RDS, EC2 사용하여 UBUNTU 인스턴스 구축, 배포</li>
+  <li>IAM 사용자 생성하여 보안 그룹 설계</li>
+  <li>스왑 메모리 사용하여 낮은 인스턴스 사양에 비교적 빠른 처리</li>
+</ul>
+<a href="https://github.com/hykim-king/f1_new.git" class="text-muted">Git Repository</a>
 
+<div class="row justify-content-between">
+<h2 id="SportsXPress" class="col-10"> SportsXPress</h2>
+<div class="col-2"><p class="text-muted" style="margin-top: 2rem;">2023.04 ~ 2023.06 (10주)</p></div>
+</div>
+<h4 class="text-muted">네이버 스포츠 클론 코딩</h4>
+<image src="/assets/sportsxpress.png" style="width: 80%;"/>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[개발 환경]</mark>
+<image src="/assets/env02.png" style="width: 70%;"/>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[참여 범위]</mark>
+<h6 class="mt-3" style="line-height: 2;">- DB설계, 구현 및 데이터 수집, 삽입. VO, Dao(Impl), Service(Impl), Controller, xml 쿼리문 작성<br>
+JSP를 사용한 화면 구현, CSS 수정</h6>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[성   과]</mark>
+<ul class="mt-3">
+  <li>객체 설계</li>
+  <li>반복문, 조건문 활용하여 일정표 html 구현</li>
+</ul>
+<a href="https://github.com/hykim-king/SPORTSXPRESS.git" class="text-muted">Git Repository</a>
 
 <footer class="github-footer">
     This page is <b>open source</b>. Noticed a typo?

@@ -5,20 +5,50 @@ permalink: /elements/
 weight: 4
 ---
 
-<h1>Projects</h1>
+<h1><strong>Projects</strong></h1>
 
-{% assign list_items = "" %}
-{% for element in site.elements %}
-    {% assign title = element.title | slice: 2, element.title.size %}
-    {%- capture list_items -%}
-        {{ list_items }}
-        {{ title }}
-    {%- endcapture -%}
-{% endfor %}
 {% include elements/list.html title="Projects" type="toc" %}
 
-{% for element in site.elements %}
-    {{ element }}
-{% endfor %}
+<div class="row justify-content-between">
+<h2 id="RoadScanner" class="col-10"> RoadScanner</h2>
+<div class="col-2"><p class="text-muted" style="margin-top: 2rem;">2023.07 ~ 2023.08 (9주)</p></div>
+</div>
+<h4 class="text-muted"><a href="http://52.79.209.187:8080/main" style="color: #915549;">교통 표지판 인식 AI 웹 서비스</a></h4>
+<image src="/assets/roadscanner.png" style="width: 80%;"/>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[개발 환경]</mark>
+<image src="/assets/env01.png" style="width: 65%;"/>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[참여 범위]</mark>
+<h6 class="mt-3" style="line-height: 2;">- DB설계, 구현 및 데이터 수집. VO, Dao(Impl), Service(Impl), Controller, xml 쿼리문 작성<br>
+JSP를 사용한 메인 표지판 업로드, 게시판 파일 첨부 글쓰기 구현. AWS S3, RDS, EC2 연결, 보안 설정 및 배포</h6>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[성   과]</mark>
+<ul class="mt-3">
+  <li>MultipartFile 인터페이스와 AWS S3 사용하여 첨부파일 업로드, 객체 관리</li>
+  <li>AWS RDS, EC2 사용하여 UBUNTU 인스턴스 구축, 배포</li>
+  <li>IAM 사용자 생성하여 보안 그룹 설계</li>
+  <li>스왑 메모리 사용하여 낮은 인스턴스 사양에 비교적 빠른 처리</li>
+</ul>
+<a href="https://github.com/hykim-king/f1_new.git" class="text-muted">Git Repository</a>
+
+<div class="row justify-content-between">
+<h2 id="SportsXPress" class="col-10"> SportsXPress</h2>
+<div class="col-2"><p class="text-muted" style="margin-top: 2rem;">2023.04 ~ 2023.06 (10주)</p></div>
+</div>
+<h4 class="text-muted">네이버 스포츠 클론 코딩</h4>
+<image src="/assets/sportsxpress.png" style="width: 80%;"/>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[개발 환경]</mark>
+<image src="/assets/env02.png" style="width: 70%;"/>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[참여 범위]</mark>
+<h6 class="mt-3" style="line-height: 2;">- DB설계, 구현 및 데이터 수집, 삽입. VO, Dao(Impl), Service(Impl), Controller, xml 쿼리문 작성<br>
+JSP를 사용한 화면 구현, CSS 수정</h6>
+<br>
+<mark class="px-2" style="background: #d3b792; opacity: 0.8;">[성   과]</mark>
+<ul class="mt-3">
+  <li>객체 설계</li>
+  <li>반복문, 조건문 활용하여 일정표 html 구현</li>
+</ul>
+<a href="https://github.com/hykim-king/SPORTSXPRESS.git" class="text-muted">Git Repository</a>
 
 {% include elements/github-edit-footer.html %}

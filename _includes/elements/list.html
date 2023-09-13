@@ -6,17 +6,8 @@
     <a class="list-group-item active disabled text-white" style="background-color: #915549; border-color: #915549;">{{ include.title }}</a>
   {%- endif -%}
 
-  <a class="list-group-item list-group-item-action" href="#headers">Headers</a>
-  <a class="list-group-item list-group-item-action" href="#headers">Headers</a>
-  {% for item in items %}
-    {%- if include.type == "toc" -%}
-      <a class="list-group-item list-group-item-action" href="#{{ item | slugify }}">{{ item }}</a>
-	  <a class="list-group-item list-group-item-action" href="#headers">Headers</a>
-    {%- else -%}
-      {%- assign item_object = item | split: ',' -%}
-      <a class="list-group-item list-group-item-action" href="{{ item_object[1] }}">{{ item_object[0] }}</a>
-    {%- endif -%}
-  {% endfor %}
+  <a class="list-group-item list-group-item-action" href="#RoadScanner">RoadScanner</a>
+  <a class="list-group-item list-group-item-action" href="#SportsXPress">SportsXPress</a>
 
 </div>
 
